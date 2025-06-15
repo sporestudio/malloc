@@ -27,7 +27,7 @@ On failure, `srbk()` returns `void(*) -1`.
 
 `Sbrk()` is not our best buddy in 2025. There are better alternatives like `mmap()` available today. `Sbrk()` is not really thread safe. It can can only grow or shrink in LIFO order.
 
-> The brk and sbrk fucntions are historically curiosities left over from earlier days before the advent of virtual memory management.
+> The **brk** and **sbrk** functions are historically curiosities left over from earlier days before the advent of virtual memory management.
 
-However, the glibc implementation of mnalloc still uses `srbk()` for allocating memory that's not too big in size. So, we will go ahead with `srbk()` for our simple memory allocator.
+However, the glibc implementation of malloc still uses `srbk()` for allocating memory that's not too big in size. So, we will go ahead with `srbk()` for our simple memory allocator.
 
