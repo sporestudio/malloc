@@ -1,6 +1,9 @@
 # Simple Memory Allocator
 This project is about writing a simple memory allocator in [C](https://www.c-language.org/). I will implement `malloc()`, `calloc()`, `realloc()` and `free()`.
 
+> [!WARNING]
+> This repository is under development.
+
 ## Requeriments
 - Unix/Linux System
 - GCC compiler
